@@ -1,0 +1,15 @@
+{
+  "name": "lexffe.github.io",
+  "version": "0.0.1",
+  "description": "the temporary home page",
+  "scripts": {
+    "build": "parcel build index.pug",
+    "dev": "parcel index.pug --no-cache"
+  },
+  "author": "lexffe",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-pug": "^2.9.2",
+    "parcel": "^2.9.2"
+  }
+}
