@@ -1,0 +1,38 @@
+doctype html 
+html(lang="en")
+  head
+    title The temporary landing page
+    meta(name="description",content="The temporary landing page for lexffe.xyz")
+    include head.pug
+  
+  body
+    main
+      header
+        h1 The temporary landing page
+      article
+        section
+          p.
+            This page is a temporary placeholder while I figure out how to deploy a self-managed kubernetes cluster.
+          h2 Links of interest
+          ul
+            li 
+              a(href="https://github.com/lexffe") GitHub
+            li
+              a(href="https://www.linkedin.com/in/lexffe") LinkedIn
+        
+        section
+          h2 Current roadmap
+          ol
+            li Build a self-managed Kubernetes cluster
+            li Move services to the new cluster
+            li Move the hosting of this page to the cluster
+            li Build my blog engine
+            li Build a private photo gallery
+            li Make this page look nicer
+
+      hr
+
+      footer
+        p This page is written with semantic elements in mind. Take a look by inspecting the page yourself!
+        p No JavaScript and 100% Lighthouse!
+        include last-updated.pug
