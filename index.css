@@ -10,3 +10,7 @@ main {
 span.light {
   font-weight: 300;
 }
+
+details > summary {
+  line-height: 1.5em;
+}
