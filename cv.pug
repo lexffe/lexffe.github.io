@@ -1,0 +1,187 @@
+doctype html 
+html(lang="en")
+  head
+    title Curriculum Vitae
+    meta(name="description", content="A profile of me")
+    include head.pug
+
+  body
+    main
+      header
+        h1 Curriculum Vitae
+        p
+          a(href="mailto:arbeit@lexffe.xyz") Contact me by email
+          span  or send me a message via SMS and WhatsApp on 
+            a(href="tel:+447424304443") 07424304443
+          span  (professional purposes only.)
+          
+      hr
+
+      section
+        h2 Profile
+        p.
+          Adaptive, pragmatic individual who is devoted to industry progression,
+          with a drive on problem solving, optimisation, and modernisation.
+        p.
+          Seeking for a career in Software Engineering to deliver life-changing solutions to
+          the world, continue broadening skillset and drive developments in related fields such as AI,
+          robotics and automation forward.
+  
+
+      section
+        h2 Work experience
+        details(open)
+          summary
+            span Software Engineer at Genomics plc 
+            i (Placement Jul 2021 - Sep 2022)
+          ul
+            li Contributed to the development of web application using React and Spring Boot
+              ul
+                li Experience in writing unit, integration, and end-to-end tests using Cypress, TestCafe, JUnit, and more. 
+                li Mocking, testing, and integration with 3rd party services using OpenAPI.
+                li Setting up observability - tracing on DataDog from React frontend to Spring boot backend.
+            li Participated in UI/UX design and implementation of internal platform dashboard, written in React and Go
+              ul
+                li.
+                  Implemented a cluster application authentication and authorisation tool MVP in 3 weeks with OIDC, 
+                  according to high level requirement to support product development.
+                li Provided gRPC and HTTP interface for product developers to integrate with their code
+                li Effective cross-team communication during development, including presentations and sprint planning
+            li Eliminated developer bottleneck completely by automating test data package creation using Bash.
+            li Decreased Packer machine image build time by 60%, by introducing parallelisation.
+            li Securing Kubernetes cluster with custom policies written and deployed with OPA Gatekeeper.
+              ul 
+                li e.g. Prevent pulling containers from untrusted sources, vendoring 3rd party containers.
+            li Contributed and participated in Disaster Recovery drills and incident managemet plans.
+            li Helping in decision making of instance sizes by benchmarking instance storage.
+          
+        details
+          summary 
+            span Sales / Advisor for Microsoft Surface products 
+            i (Summer 2018)
+          p.
+            Showcasing Microsoft Surface products to university 
+            and provide advise according to their use case.
+
+      section
+        h2 Technical Skills and Experiences
+
+        h3 Front-end development
+        ul
+          li Intermediate experience in writing TypeScript, modern JavaScript, Sass (SCSS)
+          li Intermediate experience in using React
+          li Basic working knowledge with Svelte, Vue, Stencil/Ionic, Lit, Electron, TypeORM
+
+        h3 Server-side / Systems / General Development
+        ul
+          li Intermediate experience in writing TypeScript (Node), Go, Java (Spring), Bash, Python
+          li Intermediate experience in libraries such as gRPC, Protobuf
+          li Basic working knowledge with Haskell, Julia, Kotlin, Scala, C, C#
+
+        h3 Databases
+        ul
+          li Intermediate experience in using PostgreSQL, Redis
+          li Basic working knowledge with MySQL/MariaDB, MongoDB
+
+        h3 Systems, operations and infrastructure
+        h4 Cloud and containers
+        ul
+          li AWS (EC2, RDS, VPC networking, Cloudwatch, EKS, S3)
+          li Infrastructure as Code (Terraform, Packer)
+          li Basic knowledge on GCP and Azure offerings, such as GKE Autopilot, Azure VMs
+          li Container management and infrastructure (docker / docker-compose)
+          li Container orchestration using Kubernetes
+            ul
+              li Service mesh (Linkerd)
+              li Policy management (OPA Gatekeeper)
+          li DDoS mitigation and server protection using WAFs (Cloudflare, DigitalOcean Firewall)
+        h4 Developer experience
+        ul
+          li Observability tools (DataDog, Honeycomb)
+          li Continuous Integration (CircleCI, Gitlab CI)
+        h4 System administration
+        ul
+          li Website hosting (nginx, lighttpd)
+          li Reverse proxy and load balancing (HAProxy)
+          li Linux firewall management (iptables, ufw)
+          li Basic working knowledge on VPN provision (IKEv2, L2TP/IPSec, OpenVPN)
+          li Basic working knowledge on low configuration VPNs (Tailscale, ZeroTier)
+        h4 
+        h3 Other domains
+        ul
+          li Microcontroller programming (Lua-NodeMCU, ESP8266)
+          li Chatbots (Telegram, Discord, Slack)
+          li Mikrotik RouterOS provision & configuration
+          li Machine learning and AI with PyTorch and scikit-learn
+          li Basic FreeBSD server administration (ZFS, NFS exports, Samba)
+
+      section
+        h2 Certifications
+        ul
+          li AWS Solutions Architect Associate (SAA-C02, acquired 08/2022)
+          li SFIA Level 3 in ITOP - IT infrastructure and PROG - Software Development
+
+      section
+        h2 Education and academic experience
+        details 
+          summary 
+           i Computer Science with a year in industry BEng (University of York, 2019 - 2023)
+          ul
+            li Computational Theory (Automata and Languages)
+            li Programming languages (Haskell, Java, Python)
+            li Data science and machine learning (scikit-learn, PyTorch, pandas, matplotlib, numpy)
+            li 
+        p 
+          i Electronics and Computer Systems Engineering CertHE (Loughborough University, 2018 - 2019)
+        p 
+          i GCSE / GCE A-Level (2014 - 2018)
+        
+
+      section
+        h2 Project and team experience
+        ul
+          li Independent final year project (PRBX)
+            ul
+              li ECG peak and wave fragmentation detection for arrhythmia diagnosis in Python, utilising machine learning algorithms such as Random Forest and XGBoost.
+          li HYMS Medical Technology Society innovation programme - Participant
+            ul
+              li Innovation idea on outpatient care and patient management for cardiovascular disease patients.
+          li Embedded systems project (Loughborough)
+            ul
+              li Using Wi-Fi signals to triangulate devices for vehicular collision prevention.
+
+
+      section
+        
+        h2 Technical interests
+        ul
+          li Lispy languages (Clojure, Hy, Racket)
+          li Programming language interoperability
+          li Functional programming and state management
+          li WebAssembly, JavaScript runtimes
+          li Software delivery and deployment strategies
+          li Incremental build systems (e.g. Bazel)
+          li Heterogeneous computing
+          li High-performance computing, parallelisation
+          li Concurrent applications, actors
+          li Erlang / Elixir, and application-level high availability
+          li Distributed applications and microservices
+          li Unikernels as alternatives for app containers
+          li Applications of CompSci in other STEM fields
+          li The Phoenix Project (Book)
+          li DevOps Handbook (Book)
+          li Domain Modelling Made Functional (Book)
+        
+      section
+        h2 Miscellaneous
+
+        details
+          summary [WIP] Technologies I find interesting but have yet to use
+          ul
+            li Keycloak (Cloud, IAM)
+            li Ory (Cloud, IAM)
+
+      hr
+        
+      footer
+        include last-updated.pug
