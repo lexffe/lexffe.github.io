@@ -1,0 +1,180 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ config.title }} {%endblock%}
+{% block description %}A profile of lexffe{% endblock %}
+{% block og_title%}Curriculum Vitae — lexffe{% endblock %}
+{% block og_description %}Work experience, technical skills, and education{% endblock %}
+{% block content %}
+<main>
+    <header>
+        <h1>Curriculum Vitae</h1>
+        <p><a href="mailto:arbeit@lexffe.xyz">Contact me by email</a></p>
+    </header>
+    <hr />
+    <section>
+        <h2>Profile</h2>
+        <p>
+            Adaptive, pragmatic individual who is devoted to industry
+            progression, with a drive on problem solving, optimisation, and
+            modernisation.
+        </p>
+        <p>
+            Seeking for a career in Software Engineering to deliver
+            life-changing solutions to the world, continue broadening skillset
+            and drive developments in related fields such as AI and
+            automation forward.
+        </p>
+    </section>
+
+    <section>
+        <h2>Work experience</h2>
+        <details>
+            <summary><span>Software Engineer at Genomics ltd </span><i>(Jul 2023 - )</i></summary>
+        </details>
+        <details>
+            <summary><span>Associate Software Engineer at Genomics plc </span><i>(Placement Jul 2021 - Sep 2022)</i></summary>
+            <ul>
+            <li>Contributed to the development of web application using React and Spring Boot
+                <ul>
+                <li>Experience in writing unit, integration, and end-to-end tests using Cypress, TestCafe, JUnit, and more.</li>
+                <li>Mocking, testing, and integration with 3rd party services using OpenAPI.</li>
+                <li>Setting up observability - tracing on DataDog from React frontend to Spring boot backend.</li>
+                </ul>
+            </li>
+            <li>Participated in UI/UX design and implementation of internal platform dashboard, written in React and Go
+                <ul>
+                <li>
+                    Implemented a cluster application authentication and authorisation tool MVP in 3 weeks with OIDC,
+                    according to high level requirement to support product development.
+                </li>
+                <li>Provided gRPC and HTTP interface for product developers to integrate with their code.</li>
+                <li>Effective cross-team communication during development, including presentations and sprint planning.</li>
+                </ul>
+            </li>
+            <li>Eliminated developer bottleneck completely by automating test data package creation using Bash.</li>
+            <li>Decreased Packer machine image build time by 60%, by introducing parallelisation.</li>
+            <li>Securing Kubernetes cluster with custom policies written and deployed with OPA Gatekeeper.
+                <ul>
+                <li>e.g. Prevent pulling containers from untrusted sources, vendoring 3rd party containers.</li>
+                </ul>
+            </li>
+            <li>Contributed and participated in Disaster Recovery drills and incident managemet plans.</li>
+            <li>Helping in decision making of instance sizes by benchmarking instance storage.</li>
+            </ul>
+        </details>
+        <details>
+            <summary><span>Sales / Advisor for Microsoft Surface products </span><i>(Summer 2018)</i></summary>
+            <p>
+            Showcasing Microsoft Surface products to university
+            and provide advise according to their use case.
+            </p>
+        </details>
+    </section>
+    <section>
+      <h2>Technical Skills and Experience</h2>
+      <h3>Typical development stack</span></summary></h3>
+        <ul>
+            <li>TypeScript, Sass (SCSS), React</li>
+            <li>Go, Kotlin/Java (Spring), Python</li>
+            <li>gRPC, GraphQL</li>
+            <li>PostgreSQL, Redis</li>
+        </ul>
+      <h3>Systems, operations and infrastructure</h3>
+      <h4>Cloud and containers</h4>
+      <ul>
+        <li>AWS (EC2, RDS, VPC networking, Cloudwatch, EKS, S3)</li>
+        <li>Infrastructure as Code (Terraform, Packer)</li>
+        <li>Container management and infrastructure (docker / docker-compose)</li>
+        <li>Container orchestration using Kubernetes, with service mesh (Linkerd) and Policy management (OPA Gatekeeper)</li>
+        <li>DDoS mitigation and server protection using WAFs (Cloudflare, DigitalOcean Firewall)</li>
+      </ul>
+      <h4>Developer experience</h4>
+      <ul>
+        <li>Observability tools (DataDog, Honeycomb)</li>
+        <li>Continuous Integration (CircleCI, Gitlab CI, GitHub Actions)</li>
+      </ul>
+      <h3>Other technologies I have worked with (at a basic level)</h3>
+      <h4>System administration</h4>
+      <ul>
+        <li>Website hosting (nginx, lighttpd)</li>
+        <li>Reverse proxy and load balancing (HAProxy)</li>
+        <li>Linux firewall management (iptables, ufw)</li>
+        <li>VPN provision (IKEv2, L2TP/IPSec, OpenVPN)</li>
+        <li>Low configuration VPNs (Tailscale, ZeroTier)</li>
+      </ul>
+      <h4>Other domains</h4>
+      <ul>
+        <li>Microcontroller programming (Lua-NodeMCU, ESP8266)</li>
+        <li>Chatbots (Telegram, Discord, Slack)</li>
+        <li>Mikrotik RouterOS provision & configuration</li>
+        <li>Machine learning and AI with PyTorch and scikit-learn</li>
+        <li>FreeBSD/Linux storage server administration (ZFS, NFS exports, Samba)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Solutions Architect Associate (SAA-C02, acquired 08/2022)</li>
+        <li>SFIA Level 3 in ITOP - IT infrastructure and PROG - Software Development</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Education and academic experience</h2>
+      <details>
+        <summary><i>Computer Science with a year in industry BEng (University of York, 2019 - 2023)</i></summary>
+        <p>Graduated late 2023, first class</p>
+        <ul>
+          <li>Computational Theory (Automata and Languages)</li>
+          <li>Programming languages (Haskell, Java, Python)</li>
+          <li>Data science and machine learning (scikit-learn, PyTorch, pandas, matplotlib, numpy)</li>
+          <li>Networking and Computer Architecture</li>
+          <li>Operating Systems</li>
+          <li>Cryptography basics</li>
+        </ul>
+      </details>
+      <p><i>Electronics and Computer Systems Engineering CertHE (Loughborough University, 2018 - 2019)</i></p>
+      <p><i>GCSE / GCE A-Level (2014 - 2018)</i></p>
+      <section>
+        <h3>Project and team experience</h3>
+        <ul>
+          <li>Independent final year project (PRBX)
+            <ul>
+              <li>ECG peak and wave fragmentation detection for arrhythmia diagnosis in Python, utilising machine learning algorithms such as Random Forest and XGBoost.</li>
+            </ul>
+          </li>
+          <li>HYMS Medical Technology Society innovation programme - Participant
+            <ul>
+              <li>Innovation idea on outpatient care and patient management for cardiovascular disease patients.</li>
+            </ul>
+          </li>
+          <li>Embedded systems project (Loughborough)
+            <ul>
+              <li>Using Wi-Fi signals to triangulate devices for vehicular collision prevention.</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </section>
+    <section>
+      <h2>Technical interests</h2>
+      <ul>
+        <li>Lispy languages (Clojure, Hy, Racket)</li>
+        <li>Programming language interoperability</li>
+        <li>Functional programming and state management</li>
+        <li>WebAssembly, JavaScript runtimes</li>
+        <li>Software delivery and deployment strategies</li>
+        <li>Incremental build systems (e.g. Bazel)</li>
+        <li>Heterogeneous computing</li>
+        <li>High-performance computing, parallelisation</li>
+        <li>Concurrent applications, actors</li>
+        <li>Erlang/OTP, Elixir, Gleam and application-level high availability</li>
+        <li>Distributed applications and microservices</li>
+        <li>Unikernels as alternatives for app containers</li>
+        <li>Applications of CompSci in other STEM fields</li>
+        <li>DevOps Handbook (Book)</li>
+        <li>Domain Modelling Made Functional (Book)</li>
+      </ul>
+    </section>
+    <hr />
+    <footer><span class="light"><i>Last updated: {% block last_updated %}{{ now() | date(format="%Y-%m-%d") }}{% endblock %}</i></span></footer>
+</main>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title }} | {{ config.title }}{% endblock %}
+{% block og_title %}{{ section.title }}{% endblock %}
+{% block og_description %}{{ section.description }}{% endblock %}
+
+{% block content %}
+<main>
+    <header>
+    <h1>{{ section.title }}</h1>
+    </header>
+
+    <section>
+    {% for page in section.pages %}
+        <details>
+            <summary>
+                <span><a href="{{ page.permalink }}">{{ page.title }}</a></span>
+                (<time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>)
+            </summary>
+            {% if page.description %}
+            <p>{{ page.description }}</p>
+            {% endif %}
+        </details>
+    {% endfor %}
+    </section>
+</main>
+{% endblock %}

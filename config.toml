@@ -1,0 +1,18 @@
+title = "lexffe.xyz"
+description = "my little tech corner of the internet"
+base_url = "https://lexffe.xyz"
+
+compile_sass = false
+build_search_index = false
+
+minify_html = true
+generate_feeds = true
+
+[markdown]
+
+[markdown.highlighting]
+theme = "catppuccin-mocha"
+
+[extra]
+author = "lexffe"
+github_url = "https://github.com/lexffe"

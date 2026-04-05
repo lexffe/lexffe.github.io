@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block title %}{{ section.title }} | {{ config.title}}{% endblock %}
+{% block description %}{{ section.description }}{% endblock %}
+{% block canonical %}{{ section.permalink }}{% endblock %}
+{% block og_title%}{{ section.title }}{% endblock %}
+{% block og_description %}{{section.description }}{% endblock %}
+{% block og_url %}{{ section.permalink }}{%endblock %}
+{% block content %}
+<main>
+    <header>
+        <h1>the landing page</h1>
+        <p>mechanical symphathiser tries to write.</p>
+    </header>
+    <article>
+        <section>
+            <h2>Links of interest</h2>
+            <nav>
+                <ul>
+                  <li><a href="{{ get_url(path='tech-blog') }}">Tech blog</a></li>
+                  <li><a href="https://github.com/lexffe">GitHub</a></li>
+                  <li><a href="{{ get_url(path='cv') }}">CV and profile</a></li>
+                  <li><a href="https://www.linkedin.com/in/lexffe">LinkedIn</a></li>
+                </ul>
+            </nav>
+        </section>
+        <section>
+          <h2>Current daily gears</h2>
+          <h3>compute and accessories</h3>
+          <ul>
+            <li>mac mini m2 pro</li>
+            <li>s24 ultra</li>
+            <li>zsa moonlander default keymap</li>
+            <li>logitech m575</li>
+            <li>dell dock</li>
+            <li>samsung monitor</li>
+            <li>xteink x4</li>
+            <li>bose</li>
+            <li>nothing open</li>
+          </ul>
+          <h3>photography</h3>
+          <ul>
+            <li>sony alpha a6400 body</li>
+            <li>sigma f/1.4 16mm DC E-mount</li>
+            <li>sigma f/1.4 30mm DC E-mount</li>
+            <li>sony 18-120 E-mount</li>
+            <li>fujifilm x-t10 body w/ sigma f/1.4 30mm DC E-mount</li>
+          </ul>
+        </section>
+    </article>
+    <hr />
+    <footer><span class="light"><i>Last updated: {% block last_updated %}{{ now() | date(format="%Y-%m-%d") }}{% endblock %}</i></span></footer>
+</main>
+{% endblock %}
