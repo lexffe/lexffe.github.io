@@ -10,7 +10,7 @@ I am a giant music nerd and recently I am going through a reminiscing nostalgic 
 
 (It is impossible to know my listening history before Spotify. 8 year old me relied on family for music and 12 year old me used to play music on YouTube and Google Music (RIP). I requested a copy of my YouTube data using takeout but none of them are useful (they only preserve 1 year of history it seems.))
 
-## The data
+# The data
 
 The data came in a zip file. Inside is a README PDF that contains descriptions of the columns.
 The actual dataset spans through multiple JSON files, each around 12.8MB big.
@@ -54,7 +54,7 @@ A few interesting things:
   - You can still tell which ISP you were on by using `bgp.he.net`.
 - Spotify is being smart and gave us the album artist's name. Makes sense because there could be a featuring artist on the track, or it could be a compilation album.
 
-## "Quack"
+# "Quack"
 
 Even though it is being given to me in JSON, this looks like tabular data to me. The only reasonable move
 is to put it into a database and query it instead of using grep.
@@ -69,7 +69,7 @@ I turned to DuckDB as I want a database that's as easy to use as SQLite but can 
 I ingested the data into DuckDB with a tiny bit of normalisation around the IP addresses and I skipped all the
 audiobook stuff because I never used it, as well as the podcast stuff.
 
-### File size
+## File size
 
 |Format|Size (MB)|
 |------|----|
@@ -80,7 +80,7 @@ audiobook stuff because I never used it, as well as the podcast stuff.
 
 Even with compression, my dataset still weighs 34.1MB. I did some optimisation such as decoding the spotify track URI's base62 ID component into blobs and store the blobs, and normalisations like storing tracks in a different table and create a view to join the history table with the track table back together. This took the file size down to 21.8MB. I guess I can further normalise by having the user agent in a different table / enum, storing `reason_start` and `reason_end` as enums, but that's an exercise for later.
 
-## Excerpt on what I found
+# Excerpt on what I found
 
 ```sql
 select 
@@ -171,7 +171,7 @@ select date(min(timestamp)) as ts_date, count() as album_count, album_name, arti
 | 2016-09-16 | 661         | New Age \| Dark Age (Deluxe Version)     | Karma Fields      |
 
 
-## After words
+# After words
 
 This dataset is basically Spotify Wrapped but better.
 
@@ -180,7 +180,7 @@ They no longer serve metadata such as genres, BPM, etc.
 My original plan was to write a function (either ClickHouse UDF or some JS) to fetch these metadata on-demand but that's no longer viable.
 
 I might jot down the process of getting more metadata out of Spotify, MusicBrainz and Last.fm
-in a future post. It is still in progress and involves setting up a MusicBrainz database locally, attempting to pglite and a bit of LLM wrangling.
+in a future post. It is still in progress and involves setting up a MusicBrainz database locally, attempting to pglite and a bit of LLM wrangling. I also want to look into fuzzy text search.
 
 I also have friends asking me how to make this. I might make a little client-side web app for people
 to play with. DuckDB has a WASM version so this can all be done without a server.
