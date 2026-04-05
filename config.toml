@@ -10,8 +10,15 @@ generate_feeds = true
 
 [markdown]
 
+render_emoji = true
+github_alerts = true
+
 [markdown.highlighting]
-theme = "catppuccin-mocha"
+error_on_missing_language = true
+
+style = "inline"
+light_theme = "catppuccin-frappe"
+dark_theme = "catppuccin-mocha"
 
 [extra]
 author = "lexffe"

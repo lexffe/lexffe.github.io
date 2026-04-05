@@ -14,10 +14,6 @@ body {
         sans-serif;
 }
 
-* {
-    line-height: 1.5em;
-}
-
 main {
     line-height: 1.5em;
     margin: 0 2em;
@@ -43,4 +39,16 @@ details > summary {
 
 ul {
     line-height: 1.5em;
+}
+
+pre.giallo {
+    padding: 1em;
+}
+
+thead {
+    background-color: #ddd;
+}
+
+tr:hover {
+    background-color: #eee;
 }
