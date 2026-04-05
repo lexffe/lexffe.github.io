@@ -1,4 +1,4 @@
 +++
-title = "the temporary landing page"
-description = "the temporary landing page"
+title = "the landing page"
+description = "mechanical symphathiser tries to write."
 +++

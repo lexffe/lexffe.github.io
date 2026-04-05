@@ -14,10 +14,18 @@ body {
         sans-serif;
 }
 
+* {
+    line-height: 1.5em;
+}
+
 main {
     line-height: 1.5em;
-    margin: 0 3em;
+    margin: 0 2em;
     overflow-y: auto;
+}
+
+h1 {
+    line-height: 1.5em;
 }
 
 hr {

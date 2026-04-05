@@ -1,6 +1,6 @@
 +++
 title = "Tech I appreciate from the software engineering world for the past n years."
-description = "I attempt to appreciate things in software engineering"
+description = "I attempt to appreciate things in software engineering."
 date = 2026-03-23
 +++
 
