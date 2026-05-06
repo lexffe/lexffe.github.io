@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
+{% block description %}{{ page.description }}{% endblock %}
+{% block canonical %}{{ page.permalink }}{% endblock %}
+{% block og_title%}{{ page.title }}{% endblock %}
+{% block og_description %}{{ page.description }}{% endblock %}
+{% block og_url %}{{ page.permalink }}{% endblock %}
+{% block content %}
+<main>
+    <header>
+        <h1>the tabs page</h1>
+        <p><i>{{ page.description }}</i></p>
+    </header>
+    <section>
+        {{ page.content | safe }}
+    </section>
+    <footer><span class="light"><i>Last updated: {% block last_updated %}{{ now() | date(format="%Y-%m-%d") }}{% endblock %}</i></span></footer>
+</main>
+{% endblock %}
