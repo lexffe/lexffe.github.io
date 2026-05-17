@@ -28,13 +28,13 @@ I replaced the ISP router with my own. A MAC address cloning worked. Everything 
 ## The user profile
 
 Apart from watching YouTube and listening to music and scrolling on social media, I need to pull/push docker containers, video telephony across the world, access my home NAS through SMB/NFS/SSH/VNC, which high bandwidth and low ping would help.
-My ISP also gave me a /56 block, so I assigned a /112 to Kubernetes services and a /64 to pods on the k3s single node on my NAS. 
+My ISP also gave me a /56 block, so I assigned a /112 to services and a /64 to pods on the k3s single node on my NAS.
 
 ## The haggling
 
 I messaged Hyperoptic just to see if they could get me a better deal (even better deal than my original 12 month plan).
 
-For curiosity reasons, I ~asked~ prompted Gemini to ~find~ aggregate the average prices of 150Mb broadband across the country and the response was that in the UK, the average was £22 to £26 a month. They quoted me a £40 12 month contract, which is more expensive than what I see on broadbandchoices, uSwitch and what they offered right before the commitment ended.
+For curiosity reasons, I prompted Gemini to aggregate the average prices of 150Mb broadband across the country. The response was that in the UK, the average was £22 to £26 a month. They quoted £40 for 12 month, which is more expensive than what I saw on broadbandchoices, uSwitch and their renewal offer before the commitment ended.
 I questioned them and they said everyone gets one introductory deal, and renewal costs the same for everyone. They also said that the offer in the “renew your contract” email was valid only until the end of the 12 month commitment.
 
 I did not like that a single bit. I was already paying more than average before and now they want to charge me 1.5x avg, so I wrote a fairly strong-worded response:
@@ -47,7 +47,7 @@ They came back with
 - 500Mb: 37.99/month for 12 months, then 53/month rolling, and  
 - 150Mb: 35.99/month for 12 months, then 45/month rolling.
 
-They saw me paying 45 for 2 months and think that they can get 40 with a pretty Gigabit badge because people always want faster speed, non?
+They saw me paying 45 for 2 months and think that they can get 40 with a sparkly Gigabit badge because people always want faster speed, non?
 OK I was not being fair or nice here. They have a job to do just like us and they are just humans. Still, I don’t think those are good deals at all.
 
 # Solutions?
@@ -56,7 +56,7 @@ So what are my solutions, apart from being tied to Hyperoptic for another year? 
 
 ## Starlink
 
-I have had super good experience with Starlink, despite not having used their services directly. I was on a flight to Hong Kong with a stop in Qatar and Qatar’s Manchester to Doha leg has Starlink onboard, as well as the return flight. The ping was sub 60ms and I was watching 1080p YouTube on the flight and calling my family *on the flight*. I thought “about time. It’s 2026\. We should have had fast internet on flights ages ago.”
+I have had super good experience with Starlink, despite not having used their services directly. I was flying to Hong Kong with a stop in Doha and the first leg (Manchester to Doha) has Starlink onboard. The ping was sub 60ms and I was watching 1080p YouTube on the flight and calling my family *on the flight*. I thought “about time. It’s 2026\. We should have had fast internet on flights ages ago.”
 
 That said, I am not getting Starlink. Starlink costs £35 and only gives me 100Mb. Even though I have a balcony, there is no guarantee that I can receive a signal from the satellites.
 
