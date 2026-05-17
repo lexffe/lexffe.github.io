@@ -1,0 +1,4 @@
+extends: spelling
+message: "'%s' is a typo!"
+dictionaries:
+   - en_GB
