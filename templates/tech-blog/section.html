@@ -1,8 +1,12 @@
 {% extends "base.html" %}
 
 {% block title %}{{ section.title }} | {{ config.title }}{% endblock %}
-{% block og_title %}{{ section.title }}{% endblock %}
-{% block og_description %}{{ section.description }}{% endblock %}
+
+{% block opengraph %}
+<meta property="og:title" content="{{ section.title }}" />
+<meta property="og:description"content="{{ section.description }}" />
+<meta property="og:type" content="website" />
+{% endblock %}
 
 {% block content %}
 <main>
